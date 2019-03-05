@@ -1,3 +1,4 @@
 {
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "composer.executablePath": "C:\\ProgramData\\ComposerSetup\\bin\\composer.bat"
 }
