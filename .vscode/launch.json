@@ -4,34 +4,31 @@
     // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-
-
-
         {
-            "type": "chrome",
+            "name": "Python: Executer sur un terminal externe",
+            "type": "python",
             "request": "launch",
-            "name": "Launch Chrome against test.html",
-            "url": "${workspaceFolder}/Sandbox/test.html",
-            "webRoot": "${workspaceFolder}"
+            "program": "${file}",
+            "console": "externalTerminal"
         },
+
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Chrome sur le fichier courant avec LiveServer",
+            "name": "JS : Chrome sur le fichier courant avec LiveServer",
             "url": "http://127.0.0.1:5500/${relativeFile}",
             "webRoot": "${workspaceFolder}"
         },
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Chrome sur le fichier courant avec Serveur PHP",
+            "name": "PHP : Chrome sur le fichier courant avec Serveur PHP",
             "url": "http://localhost:8080/${relativeFile}",
             "webRoot": "${workspaceFolder}"
         },
         {
       //"debugServer": 4711, // Uncomment for debugging the adapter
-      "name": "Listen for XDebug",
+      "name": "PHP: Listen for XDebug",
       "type": "php",
       "request": "launch",
       "port": 9000,
@@ -39,7 +36,7 @@
     },
     {
         //"debugServer": 4711, // Uncomment for debugging the adapter
-        "name": "Launch PHP",
+        "name": "PHP : Débugguer PHP",
         "request": "launch",
         "type": "php",
         "program": "${file}",
