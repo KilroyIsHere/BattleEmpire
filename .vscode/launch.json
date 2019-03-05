@@ -6,28 +6,45 @@
     "configurations": [
 
 
+
+
         {
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against test.html",
             "url": "${workspaceFolder}/Sandbox/test.html",
             "webRoot": "${workspaceFolder}"
-        }
+        },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Chrome sur le fichier courant avec LiveServer",
             "url": "http://127.0.0.1:5500/${relativeFile}",
             "webRoot": "${workspaceFolder}"
-        }
+        },
         {
             "type": "chrome",
             "request": "launch",
             "name": "Chrome sur le fichier courant avec Serveur PHP",
             "url": "http://localhost:8080/${relativeFile}",
             "webRoot": "${workspaceFolder}"
-        }
-
-
+        },
+        {
+      //"debugServer": 4711, // Uncomment for debugging the adapter
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "port": 9000,
+      "log": true
+    },
+    {
+        //"debugServer": 4711, // Uncomment for debugging the adapter
+        "name": "Launch PHP",
+        "request": "launch",
+        "type": "php",
+        "program": "${file}",
+        "cwd": "${workspaceRoot}",
+        "externalConsole": false
+      }  
     ]
 }
